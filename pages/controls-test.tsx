@@ -122,7 +122,7 @@ export default function ControlsTest() {
     return (
         <div>
             <h1>Page for testing the bike controls</h1>
-
+            <div class="colored-block"></div
             {fakeBike
                 ? <BikeControls
                     api={credentials.api}
@@ -144,7 +144,18 @@ export default function ControlsTest() {
                     padding-bottom: 70px;
                     border-radius: 10px;
                 }
-            `}</style>
+            `}
+            jsx>{`
+            main {
+          padding: 4rem 2rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #f0f0f0; /* Add background color here */
+        }
+            </style>
         </div >
     )
 }
