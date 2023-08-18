@@ -65,7 +65,7 @@ const Home: NextPage = () => {
       return () => clearTimeout(connectedTimer)
     }
   }, [bikeInstance])
-<html> <title>Tim's custom horns</title></html>
+
   return (
     <div>
       <main>
