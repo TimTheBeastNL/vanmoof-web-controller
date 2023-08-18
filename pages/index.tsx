@@ -99,6 +99,29 @@ const Home: NextPage = () => {
         }
         
         
+    {browserCompatible ? (
+      credentials ? (
+        bikeInstance ? (
+          <BikeControls
+            api={credentials.api}
+            bike={bikeInstance}
+            disconnect={disconnect}
+          />
+        ) : (
+          <BluetoothConnect
+            bikeCredentials={credentials.bikes}
+            setBikeInstance={setBikeInstance}
+            backToLogin={backToLogin}
+          />
+        )
+      ) : (
+        <Login setCredentials={setCredentials} />
+      )
+    ) : (
+      // Render nothing or a message for unsupported browsers
+      // This will skip displaying the unsupported popup
+      <></>
+    )}
 
        
       </main>
