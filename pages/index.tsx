@@ -69,7 +69,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <main>
-       <h1 className='title' style="color:Blue">Custom Vanmoof horns</h1>
+       <h1 className='title'>Custom Vanmoof horns</h1>
         <p>Add your own custom horns on your S/X3!</p>
         
         {!browserCompatible
@@ -132,6 +132,7 @@ const Home: NextPage = () => {
           font-size: 2rem;
           text-align: center;
           color: ffed10;
+          background-color: ffed10;
         }
         .buttonsounds{
     background-color: black;
