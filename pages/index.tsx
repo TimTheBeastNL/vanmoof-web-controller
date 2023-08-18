@@ -81,24 +81,8 @@ const Home: NextPage = () => {
           </>
           : undefined}
        
-       {!browserCompatible
-          ? <Unsupported />
-          : credentials
-            ? bikeInstance
-              ? <BikeControls
-                api={credentials.api}
-                bike={bikeInstance}
-                disconnect={disconnect}
-              />
-              : <BluetoothConnect
-                bikeCredentials={credentials.bikes}
-                setBikeInstance={setBikeInstance}
-                backToLogin={backToLogin}
-              />
-            : <Login setCredentials={setCredentials} />
-        }
-        
-        
+      
+      
     {browserCompatible ? (
       credentials ? (
         bikeInstance ? (
