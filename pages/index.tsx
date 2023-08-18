@@ -65,11 +65,10 @@ const Home: NextPage = () => {
       return () => clearTimeout(connectedTimer)
     }
   }, [bikeInstance])
-
+<html> <title>Tim's custom horns</title></html>
   return (
     <div>
       <main>
-        <title>Tim's custom horns</title>
        <h1 className='title'>Custom Vanmoof horns</h1>
         <p>Add your own custom horns on your S/X3!</p>
         
