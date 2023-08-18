@@ -94,22 +94,7 @@ const Home: NextPage = () => {
             <p className='description'>
               Using this site you can change the speed limit of your VanMoof S3 and X3
             </p>
-            <div className='previewLight'>
-              <Image
-                alt="Site preview"
-                src={screenshotLight}
-                placeholder='blur'
-                layout="responsive"
-              />
-            </div>
-            <div className='previewDark'>
-              <Image
-                alt="Site preview"
-                src={screenshotDark}
-                placeholder='blur'
-                layout="responsive"
-              />
-            </div>
+           
           </>
           : undefined}
 
