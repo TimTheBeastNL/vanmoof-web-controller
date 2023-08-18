@@ -133,6 +133,9 @@ const Home: NextPage = () => {
           font-size: 2rem;
           text-align: center;
         }
+        .buttonsounds{
+    background-color: black;
+  }
 
         .description {
           text-align: center;
@@ -154,12 +157,5 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-<style>
-
-  .buttonsounds{
-    background-color: black;
-  }
-</style>
 
 export default Home
