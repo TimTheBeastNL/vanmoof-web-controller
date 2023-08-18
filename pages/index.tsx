@@ -80,9 +80,7 @@ const Home: NextPage = () => {
             </p>
           </>
           : undefined}
-       
-      
-      
+  
     {browserCompatible ? (
       credentials ? (
         bikeInstance ? (
