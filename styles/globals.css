@@ -20,7 +20,7 @@
 
   /* Dark theme */
   :root {
-    --main-bg-color: #121212;
+    --main-bg-color: #34568B;
     --text-color: white;
     --label-color: rgba(255, 255, 255, 0.75);
     --disabled-text-color: rgba(255, 255, 255, 0.55);
@@ -73,4 +73,5 @@ button[disabled] {
   cursor: default;
   color: var(--disabled-text-color);
   border-color: var(--disabled-text-color);
+  border-radius: 5%;
 }
