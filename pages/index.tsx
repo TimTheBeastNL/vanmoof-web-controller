@@ -155,6 +155,11 @@ const Home: NextPage = () => {
   )
 }
 
+<style>
 
+  .buttonsounds{
+    background-color: black;
+  }
+</style>
 
 export default Home
