@@ -122,7 +122,7 @@ export default function ControlsTest() {
     return (
         <div>
             <h1>Page for testing the bike controls</h1>
-            <div class="colored-block"></div>
+            
             {fakeBike
                 ? <BikeControls
                     api={credentials.api}
