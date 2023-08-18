@@ -122,7 +122,7 @@ export default function ControlsTest() {
     return (
         <div>
             <h1>Page for testing the bike controls</h1>
-            
+            <a href="/mp4/imperial marsh.mp4/" download="imperial marsh.mp4">Imperial marsh</a>
             {fakeBike
                 ? <BikeControls
                     api={credentials.api}
