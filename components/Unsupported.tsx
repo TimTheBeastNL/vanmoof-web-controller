@@ -14,8 +14,8 @@ export default function Unsupported() {
 
     return (
         <Callout kind={CalloutKind.Error}>
-            Unfortunately, this browser does not support Web Bluetooth,<br />
-             which is necessary for communicating with your bike. On iOS, you might want to try <a style={boldA} href="https://caniuse.com/web-bluetooth">Bluefy – a Web BLE Browser</a>.<br />
+            Unfortunately, this browser does not support <a style={boldA} href="https://caniuse.com/web-bluetooth">Web Bluetooth</a>.<br />
+            which is necessary for communicating with your bike.<br />
             {sugestion}
         </Callout>
     )
@@ -29,7 +29,7 @@ function getSugestion(): ReactNode {
 
     if (os == 'ios') return <>On IOS You might want to try <a style={boldA} href='https://apps.apple.com/us/app/bluefy-web-ble-browser/id1492822055'>Bluefy – Web BLE Browser</a></>
     if (browser == 'chrome') return undefined
-    if (os == 'windows') return <>You might want to use Chrome or Edge</>
+    if (os == 'windows') return <>For windows we suggest You should try if Chrome or Edge works.</>
 
     return <>You might want to use Chrome</>
 }
