@@ -69,9 +69,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <main>
-      {!browserCompatible
-          ? <Unsupported />
-      }
+      {!browserCompatible ? <Unsupported /> : null}
        <h1 className='title'>Custom Vanmoof Horns:</h1>
         <p>Add your own custom horns on your S/X3!</p>
        
