@@ -75,9 +75,7 @@ const Home: NextPage = () => {
        
         {!browserCompatible || (!bikeInstance && !credentials) ?
           <>
-            <p className='description'>
-             Spoiler Alert! 💨 By using this site, you can also modify the speed limit of your VanMoof S3 and X3
-            </p>
+            
           </>
           : undefined}
           <div className='unsupportedContainer'>
