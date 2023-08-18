@@ -35,6 +35,7 @@ export function SoundBoard() {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
+                    border-radius: 10%;
                 }
 
                 .label {

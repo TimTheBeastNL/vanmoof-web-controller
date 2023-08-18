@@ -72,6 +72,22 @@ const Home: NextPage = () => {
        <h1 className='title'>Custom Vanmoof horns</h1>
         <p>Add your own custom horns on your S/X3!</p>
         
+        {!browserCompatible
+          ? <Unsupported />
+          : credentials
+            ? bikeInstance
+              ? <BikeControls
+                api={credentials.api}
+                bike={bikeInstance}
+                disconnect={disconnect}
+              />
+              : <BluetoothConnect
+                bikeCredentials={credentials.bikes}
+                setBikeInstance={setBikeInstance}
+                backToLogin={backToLogin}
+              />
+            : <Login setCredentials={setCredentials} />
+        }
 
         {!browserCompatible || (!bikeInstance && !credentials) ?
           <>
@@ -97,22 +113,7 @@ const Home: NextPage = () => {
           </>
           : undefined}
 
-        {!browserCompatible
-          ? <Unsupported />
-          : credentials
-            ? bikeInstance
-              ? <BikeControls
-                api={credentials.api}
-                bike={bikeInstance}
-                disconnect={disconnect}
-              />
-              : <BluetoothConnect
-                bikeCredentials={credentials.bikes}
-                setBikeInstance={setBikeInstance}
-                backToLogin={backToLogin}
-              />
-            : <Login setCredentials={setCredentials} />
-        }
+       
       </main>
 
       <Footer />
