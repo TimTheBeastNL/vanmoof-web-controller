@@ -84,7 +84,6 @@ function SoundBtn({ children, id }: { children: string, id: number }) {
                     width: '120px',
                     minHeight: '60px',
                     display: 'block',
-                    border-radius: '5%',
                 }}
             >
                 {children}
