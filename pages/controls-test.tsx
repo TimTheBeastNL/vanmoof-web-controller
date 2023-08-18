@@ -142,6 +142,7 @@ export default function ControlsTest() {
                     align-items: center;
                     flex-direction: column;
                     padding-bottom: 70px;
+                    corner-radius: 10%;
                 }
             `}</style>
         </div >
