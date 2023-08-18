@@ -21,13 +21,13 @@
   /* Dark theme */
   :root {
     --main-bg-color: #1d1d1d;
-    --text-color: black ;
+    --text-color: white ;
     --label-color: rgba(255, 255, 255, 0.75);
     --disabled-text-color: rgba(255, 255, 255, 0.55);
     --border-color: white;
     --secondary-border-color: rgba(255, 255, 255, 0.75);
     --divider-color: #404040;
-    --error-box-bg-color: #741818;
+    --error-box-bg-color: #ffed10;
     --warning-box-bg-color: #5d4037;
     --positive-box-bg-color: #004d40;
     --active-color: #42a5f5;
