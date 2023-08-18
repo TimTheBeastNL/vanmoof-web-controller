@@ -14,8 +14,8 @@ export default function Unsupported() {
 
     return (
         <Callout kind={CalloutKind.Error}>
-            This browser does not support <a style={boldA} href="https://caniuse.com/web-bluetooth">Web Bluetooth</a>.<br />
-            we need that to communicate with your bike<br />
+            Unfortunately, this browser does not support Web Bluetooth,<br />
+             which is necessary for communicating with your bike. On iOS, you might want to try <a style={boldA} href="https://caniuse.com/web-bluetooth">Bluefy – a Web BLE Browser</a>.<br />
             {sugestion}
         </Callout>
     )

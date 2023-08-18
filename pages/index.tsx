@@ -71,7 +71,15 @@ const Home: NextPage = () => {
       <main>
        <h1 className='title'>Custom Vanmoof horns</h1>
         <p>Add your own custom horns on your S/X3!</p>
-        
+       
+        {!browserCompatible || (!bikeInstance && !credentials) ?
+          <>
+            <p className='description'>
+             Spoiler Alert! 💨 By using this site, you can also modify the speed limit of your VanMoof S3 and X3
+            </p>
+          </>
+          : undefined}
+       
         {!browserCompatible
           ? <Unsupported />
           : credentials
@@ -89,13 +97,7 @@ const Home: NextPage = () => {
             : <Login setCredentials={setCredentials} />
         }
         
-        {!browserCompatible || (!bikeInstance && !credentials) ?
-          <>
-            <p className='description'>
-              Using this site you can change the speed limit of your VanMoof S3 and X3
-            </p>
-          </>
-          : undefined}
+        
 
        
       </main>
