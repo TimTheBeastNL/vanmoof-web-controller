@@ -131,6 +131,7 @@ const Home: NextPage = () => {
         .title {
           font-size: 2rem;
           text-align: center;
+          color: ffed10;
         }
         .buttonsounds{
     background-color: black;
