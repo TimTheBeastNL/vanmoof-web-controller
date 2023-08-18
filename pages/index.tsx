@@ -69,8 +69,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <main>
-       <h1 className='title'>Custom Vanmoof horn</h1>
-        <p>Change VanMoof S&X 3 speed limit</p>
+       <h1 className='title'>Custom Vanmoof horns</h1>
+        <p>Add your own custom horns on your S/X3!</p>
         
 
         {!browserCompatible || (!bikeInstance && !credentials) ?
