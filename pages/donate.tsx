@@ -7,6 +7,7 @@ export default function DonationPage() {
             <main>
                 <h1>Donate</h1>
                 <p>If you like the website and want to support me you can do so with the following links.</p>
+                <p>This is an customized site and all the credits are for will be below.</p>
                 <div className='options'>
                     <DonateOption name="Paypal" link="https://paypal.me/vanmoofapp" />
                     
