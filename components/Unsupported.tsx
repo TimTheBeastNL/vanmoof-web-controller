@@ -29,7 +29,7 @@ function getSugestion(): ReactNode {
 
     if (os == 'ios') return <>On IOS You might want to try <a style={boldA} href='https://apps.apple.com/us/app/bluefy-web-ble-browser/id1492822055'>Bluefy – Web BLE Browser</a></>
     if (browser == 'chrome') return undefined
-    if (os == 'windows') return <>For windows we suggest You should try if Chrome or Edge works.</>
+    if (os == 'windows') return <>For Windows, we recommend giving Chrome or Edge a try to see if either of them works for you.</>
 
     return <>You might want to use Chrome</>
 }
