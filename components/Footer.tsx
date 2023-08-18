@@ -14,8 +14,8 @@ export function Footer({ noDonate }: FooterProps) {
                 </Link>}
             </div>
             <div>
-            This website is <b>NOT</b> an offical VanMoof service/product! <br>
-            Changing your speed limit might cause you to drive faster than the laws allow in your country. We strongly advise all users to obey the legal speed limits. Doing so is crucial for your safety and to avoid unexpected outcomes in the event of an accident.
+            This website is <b>NOT</b> an offical VanMoof service/product! 
+            <p>Changing your speed limit might cause you to drive faster than the laws allow in your country. We strongly advise all users to obey the legal speed limits. Doing so is crucial for your safety and to avoid unexpected outcomes in the event of an accident.</p>
             </div>
             <style jsx>{`
                 footer {
