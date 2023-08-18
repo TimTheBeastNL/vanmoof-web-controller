@@ -14,7 +14,7 @@ export default function Unsupported() {
 
     return (
         <Callout kind={CalloutKind.Error}>
-            💣Unfortunately, this browser does not support <a style={boldA} href="https://caniuse.com/web-bluetooth">Web Bluetooth</a>.<br />
+            Unfortunately, this browser does not support <a style={boldA} href="https://caniuse.com/web-bluetooth">Web Bluetooth</a>.<br />
             which is necessary for communicating with your bike.<br />
             {sugestion}
         </Callout>

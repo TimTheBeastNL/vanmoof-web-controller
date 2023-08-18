@@ -13,7 +13,7 @@ interface CalloutProps {
 export function Callout({ children, kind }: CalloutProps) {
     const [icon, name] = kind == CalloutKind.Warning
         ? ['⚠️', 'warning']
-        : ['🧨', 'error']
+        : ['💣', 'error']
 
     return (
         <div className="callout">
