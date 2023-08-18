@@ -82,7 +82,7 @@ const Home: NextPage = () => {
           : undefined}
        
         {!browserCompatible
-          ? <Unsupported />
+          
           : credentials
             ? bikeInstance
               ? <BikeControls
