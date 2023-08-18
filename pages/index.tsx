@@ -69,7 +69,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <main>
-       <h1 className='title' style="color: ffed10;">Custom Vanmoof horns</h1>
+       <h1 className='title' style="color:Blue">Custom Vanmoof horns</h1>
         <p>Add your own custom horns on your S/X3!</p>
         
         {!browserCompatible
