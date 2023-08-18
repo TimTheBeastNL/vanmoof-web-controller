@@ -115,7 +115,7 @@ const Home: NextPage = () => {
 
        
       </main>
-        <head><title>Tim - Custom horns</title></head>
+        <head><title>Tim - Custom horn</title></head>
       <Footer />
 
       <style jsx>{`
