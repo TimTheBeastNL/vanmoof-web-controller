@@ -1,4 +1,4 @@
-## [Mooovy](https://vanmoof.vercel.app/)
+## [Custom Bike Horns](https://vanmoof.vercel.app/)
 
 A web app for changing the speed limit of your VanMoof S3 and X3.
 
