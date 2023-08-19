@@ -10,6 +10,7 @@ import Image from 'next/image'
 import screenshotLight from '../public/screenshot_light.png'
 import screenshotDark from '../public/screenshot_dark.png'
 import { Footer } from '../components/Footer'
+import { Analytics } from '@vercel/analytics/react';
 
 const Unsupported = dynamic(() => import('../components/Unsupported'), { ssr: false })
 const BikeControls = dynamic<BikeControlsArgs>(() => import('../components/Controls'))
@@ -155,5 +156,5 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
+<Analytics />
 export default Home
