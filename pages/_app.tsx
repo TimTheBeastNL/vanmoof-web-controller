@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import Analytics from '@vercel/analytics'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <div>
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <meta property="og:image" content="https://mooovy.app/screenshot_dark.png" />
     </Head>
     <Component {...pageProps} />
+    <Analytics />
   </div>
 }
 
