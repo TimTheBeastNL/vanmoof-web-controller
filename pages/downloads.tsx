@@ -108,7 +108,7 @@ const DownloadsPage: React.FC = () => {
           <div className="ButtonContainer">
             <div className="btn-group">
               <a
-                href="/pdf/button1.pdf"
+                href="/button1.pdf"
                 download="S3 X3 - Wired Button replacement Procedure.pdf"
                 className="Protonvpn"
               >
@@ -117,7 +117,7 @@ const DownloadsPage: React.FC = () => {
             </div>
             <div className="windscribeg">
               <a
-                href="/pdf/button2.pdf"
+                href="/button2.pdf"
                 download="S3_X3 Boost_Bell Button replacement procedure-1.pdf"
                 className="Protonvpn Protonvpnexe"
               >
