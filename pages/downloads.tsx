@@ -102,9 +102,10 @@ const DownloadsPage: React.FC = () => {
           <h1 className="Titlename">Downloads</h1>
           <div className="ButtonContainer">
             <div className="btn-group">
-              <a download="S3_X3_Wired_Button_replacement_Procedure.pdf"
+              <a
                 href="https://www.mediafire.com/file/7p3uv5bdclb9wcc/S3_X3_Wired_Button_replacement_Procedure.pdf/file"
-                className="Protonvpn">
+                className="Protonvpn"
+                target="_blank">
                 S3_X3_Wired_Button_replacement_Procedure.pdf
               </a>
               
@@ -113,6 +114,7 @@ const DownloadsPage: React.FC = () => {
               <a 
                 href="https://www.mediafire.com/file/qczm1ljpj74ihrv/S3_X3_Boost_Bell+Button_replacement_procedure.pdf/file"
                 className="Protonvpn Protonvpnexe"
+                target="_blank"
               >
                 S3_X3_Boost_Bell Button_replacement_procedure.pdf
               </a>
