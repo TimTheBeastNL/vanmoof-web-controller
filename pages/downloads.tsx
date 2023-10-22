@@ -114,8 +114,7 @@ const DownloadsPage: React.FC = () => {
               <a 
                 href="https://www.mediafire.com/file/qczm1ljpj74ihrv/S3_X3_Boost_Bell+Button_replacement_procedure.pdf/file"
                 className="Protonvpn Protonvpnexe"
-                target="_blank"
-              >
+                target="_blank">
                 S3_X3_Boost_Bell Button_replacement_procedure.pdf
               </a>
             </div>
