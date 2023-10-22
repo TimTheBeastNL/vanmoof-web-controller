@@ -108,20 +108,20 @@ const DownloadsPage: React.FC = () => {
           <div className="ButtonContainer">
             <div className="btn-group">
               <a
-                href="/S3 X3 - Wired Button replacement Procedure.pdf"
-                download="S3 X3 - Wired Button replacement Procedure.pdf"
+                href="/S3_X3_-_Wired_Button_replacement_Procedure_1.pdf"
+                download="S3_X3_-_Wired_Button_replacement_Procedure_1.pdf"
                 className="Protonvpn"
               >
-                S3 X3 - Wired Button replacement Procedure.pdf
+                S3_X3_-_Wired_Button_replacement_Procedure_1.pdf
               </a>
             </div>
             <div className="windscribeg">
               <a
-                href="/S3_X3 Boost_Bell Button replacement procedure-1.pdf"
-                download="S3_X3 Boost_Bell Button replacement procedure-1.pdf"
+                href="/S3_X3 Boost_Bell Button replacement procedure.pdf"
+                download="S3_X3 Boost_Bell Button replacement procedure.pdf"
                 className="Protonvpn Protonvpnexe"
               >
-                S3_X3 Boost_Bell Button replacement procedure-1.pdf
+                S3_X3 Boost_Bell Button replacement procedure.pdf
               </a>
             </div>
           </div>
