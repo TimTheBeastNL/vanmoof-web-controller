@@ -103,7 +103,8 @@ const DownloadsPage: React.FC = () => {
           <div className="ButtonContainer">
             <div className="btn-group">
               <a
-                href="/"
+                href="/S3_X3_Wired_Button_replacement_Procedure.pdf"
+                download="S3_X3_Wired_Button_replacement_Procedure.pdf"
                 className="Protonvpn"
                 target="_blank"
                 rel="noreferrer">
@@ -113,8 +114,9 @@ const DownloadsPage: React.FC = () => {
             </div>
             <div className="windscribeg">
               <a 
-                href="https://www.mediafire.com/file/qczm1ljpj74ihrv/S3_X3_Boost_Bell+Button_replacement_procedure.pdf/file"
+                href="/S3_X3_Wired_Button_replacement_Procedure.pdf"
                 className="Protonvpn Protonvpnexe"
+                download="S3_X3_Boost_Bell Button_replacement_procedure.pdf"
                 target="_blank"
                 rel="noreferrer">
                 S3_X3_Boost_Bell Button_replacement_procedure.pdf
