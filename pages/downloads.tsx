@@ -33,7 +33,8 @@ const DownloadsPage: React.FC = () => {
             >
               <i className="fas fa-shield-alt"></i> S3 X3 - Wired Button replacement Procedure.pdf
             </a>
-            <br>
+            </div>
+            <div class="windscribeg">
 
             <a
               href="/pdf/button2.pdf"
