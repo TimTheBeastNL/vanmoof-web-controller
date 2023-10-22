@@ -1,4 +1,6 @@
 import React from 'react';
+import MyPDF from '/S3_X3_Wired_Button_replacement_Procedure.pdf';
+import MyPDF from '/S3_X3_Boost_Bell Button_replacement_procedure.pdf';
 
 const DownloadsPage: React.FC = () => {
   return (
@@ -105,9 +107,8 @@ const DownloadsPage: React.FC = () => {
           <div className="ButtonContainer">
             <div className="btn-group">
               <a
-                href="/S3_X3_Wired_Button_replacement_Procedure.pdf"
-                className="Protonvpn"
-              >
+                href="S3_X3_Wired_Button_replacement_Procedure.pdf"
+                className="Protonvpn" download>
                 S3_X3_Wired_Button_replacement_Procedure.pdf
               </a>
             </div>
@@ -120,7 +121,7 @@ const DownloadsPage: React.FC = () => {
               </a>
             </div>
           </div>
-          <h1 className="TextInfobottom">made by Tim. 2023</h1>
+          
         </div>
       </body>
     </html>
