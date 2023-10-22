@@ -109,6 +109,7 @@ const DownloadsPage: React.FC = () => {
                 className="Protonvpn" download>
                 S3_X3_Wired_Button_replacement_Procedure.pdf
               </a>
+              <Link href="/S3_X3_Wired_Button_replacement_Procedure.pdf" locale={false}>S3_X3_Wired_Button_replacement_Procedure.pdf.</Link>
             </div>
             <div className="windscribeg">
               <a
