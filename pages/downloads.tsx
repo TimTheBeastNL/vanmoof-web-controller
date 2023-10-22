@@ -18,9 +18,6 @@ const DownloadsPage: React.FC = () => {
               margin: 0;
               background: #142850;
               backdrop-filter: blur(2px);
-              font-family: 'Poppins', sans-serif;
-              margin: 0;
-              
             }
             .container {
               display: flex;
@@ -108,7 +105,7 @@ const DownloadsPage: React.FC = () => {
           <div className="ButtonContainer">
             <div className="btn-group">
               <a
-                href="/S3_X3_Wired_Button_replacement_Procedure.pdf
+                href="/S3_X3_Wired_Button_replacement_Procedure.pdf"
                 className="Protonvpn"
               >
                 S3_X3_Wired_Button_replacement_Procedure.pdf
