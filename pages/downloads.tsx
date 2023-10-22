@@ -20,6 +20,95 @@ const DownloadsPage: React.FC = () => {
               backdrop-filter: blur(2px);
             }
           `}
+          
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: rgb(9, 9, 121);
+      background: linear-gradient(90deg, rgba(85, 61, 156, 1) 0%, rgba(0, 148, 255, 1) 50%, rgba(0, 200, 83, 1) 100%);
+
+      backdrop-filter: blur(2px);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+    }
+    
+/* title styling properties */
+    .Titlename {
+      font-size: 60px;
+      color: #BBE1FA;
+      margin-bottom: 10px;
+      margin-top: 100px;
+    }
+
+    .ButtonContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    css
+
+
+    /* button styling properties */
+    .daltonvoorburg,.Cloudwise, .magister, .home, .mooferapk,.windscribe, .Downloads, .Schoollink,.bikey, .Protonvpn, .Bitwarden, .aboutme, .keepmoving,.Protonvpn, .Protonvpnexe, .techniekcrew{
+      font-family: 'Bold', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      border: none;
+      padding: 20px 30px;
+      width: 350px;
+      text-decoration: none;
+      color: #3282B8;
+      background-color: #0F4C75;
+      margin-top: 15px;
+    }
+
+    .TextInfo {
+      font-size: 18px;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 10px;
+
+    }
+    
+    
+    /* made by tim properties */
+    .TextInfobottom {
+      font-size: 18px;
+      color: #3282B8;
+      text-align: center;
+    
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:30px; 
+    letter-spacing: normal;
+
+      
+
+   
+  }
+  /* Protonvpn group buttons properties */
+  .btn-group{
+       margin-top: 15px; 
+       margin-bottom: 15px;
+       width: 1000px;
+      }
+/* windscribe group buttons properties */
+  .windscribeg{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 1000px;
+   
+  }
+ 
         </style>
       </head>
       <body>
