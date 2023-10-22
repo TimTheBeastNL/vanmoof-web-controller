@@ -20,9 +20,7 @@ const DownloadsPage: React.FC = () => {
               backdrop-filter: blur(2px);
               font-family: 'Poppins', sans-serif;
               margin: 0;
-              background: rgb(9, 9, 121);
-              background: linear-gradient(90deg, rgba(85, 61, 156, 1) 0%, rgba(0, 148, 255, 1) 50%, rgba(0, 200, 83, 1) 100%);
-              backdrop-filter: blur(2px);
+              
             }
             .container {
               display: flex;
@@ -114,7 +112,7 @@ const DownloadsPage: React.FC = () => {
                 download="S3 X3 - Wired Button replacement Procedure.pdf"
                 className="Protonvpn"
               >
-                <i className="fas fa-shield-alt"></i> S3 X3 - Wired Button replacement Procedure.pdf
+                S3 X3 - Wired Button replacement Procedure.pdf
               </a>
             </div>
             <div className="windscribeg">
@@ -123,7 +121,7 @@ const DownloadsPage: React.FC = () => {
                 download="S3_X3 Boost_Bell Button replacement procedure-1.pdf"
                 className="Protonvpn Protonvpnexe"
               >
-                <i className="fas fa-shield-alt"></i> S3_X3 Boost_Bell Button replacement procedure-1.pdf
+                S3_X3 Boost_Bell Button replacement procedure-1.pdf
               </a>
             </div>
           </div>
