@@ -105,7 +105,8 @@ const DownloadsPage: React.FC = () => {
               <a
                 href="https://www.mediafire.com/file/7p3uv5bdclb9wcc/S3_X3_Wired_Button_replacement_Procedure.pdf/file"
                 className="Protonvpn"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 S3_X3_Wired_Button_replacement_Procedure.pdf
               </a>
               
@@ -115,7 +116,7 @@ const DownloadsPage: React.FC = () => {
                 href="https://www.mediafire.com/file/qczm1ljpj74ihrv/S3_X3_Boost_Bell+Button_replacement_procedure.pdf/file"
                 className="Protonvpn Protonvpnexe"
                 target="_blank"
-              >
+                rel="noreferrer">
                 S3_X3_Boost_Bell Button_replacement_procedure.pdf
               </a>
             </div>
