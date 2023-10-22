@@ -1,20 +1,5 @@
 import React from 'react';
 
-const DownloadButton = () => {
-  const downloadPdf = () => {
-    const link = document.createElement('a');
-    link.href = '/host/S3_X3_Wired_Button_replacement_Procedure.pdf'; // Update the path to your PDF file
-    link.download = 'S3_X3_Wired_Button_replacement_Procedure.pdf'; // Update the desired file name
-    link.click();
-  };
-
-  return (
-    <a onClick={downloadPdf} className="Protonvpn">
-      Download S3_X3_Wired_Button_replacement_Procedure.pdf
-    </a>
-  );
-};
-
 const DownloadsPage: React.FC = () => {
   return (
     <html>
@@ -34,14 +19,14 @@ const DownloadsPage: React.FC = () => {
           <h1 className="Titlename">Downloads</h1>
           <div className="ButtonContainer">
             <div className="btn-group">
-              <DownloadButton />
+              {/* This is the download link for your PDF file */}
+              <a href="/host/S3_X3_Wired_Button_replacement_Procedure.pdf" download className="Protonvpn">
+                Download S3_X3_Wired_Button_replacement_Procedure.pdf
+              </a>
             </div>
             <div className="windscribeg">
-              <a download
-                href="/host/S3_X3_Boost_Bell_Button_replacement_procedure.pdf"
-                className="Protonvpn Protonvpnexe"
-              >
-                S3_X3_Boost_Bell_Button_replacement_procedure.pdf
+              <a href="/host/S3_X3_Boost_Bell_Button_replacement_procedure.pdf" download className="Protonvpn Protonvpnexe">
+                Download S3_X3_Boost_Bell_Button_replacement_procedure.pdf
               </a>
             </div>
           </div>
