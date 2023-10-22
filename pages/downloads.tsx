@@ -102,7 +102,7 @@ const DownloadsPage: React.FC = () => {
           <h1 className="Titlename">Downloads</h1>
           <div className="ButtonContainer">
             <div className="btn-group">
-              <a download
+              <a download="S3_X3_Wired_Button_replacement_Procedure.pdf"
                 href="/host/S3_X3_Wired_Button_replacement_Procedure.pdf"
                 className="Protonvpn">
                 S3_X3_Wired_Button_replacement_Procedure.pdf
@@ -110,7 +110,7 @@ const DownloadsPage: React.FC = () => {
               
             </div>
             <div className="windscribeg">
-              <a download
+              <a download="S3_X3_Boost_Bell Button_replacement_procedure.pdf"
                 href="/host/S3_X3_Boost_Bell Button_replacement_procedure.pdf"
                 className="Protonvpn Protonvpnexe"
               >
@@ -126,125 +126,3 @@ const DownloadsPage: React.FC = () => {
 };
 
 export default DownloadsPage;
-ChatGPT
-You can add the download button component to your existing DownloadsPage component like this:
-
-tsx
-Copy code
-import React from 'react';
-
-const DownloadButton = () => {
-  const downloadPdf = () => {
-    const link = document.createElement('a');
-    link.href = '/host/S3_X3_Wired_Button_replacement_Procedure.pdf'; // Update the path to your PDF file
-    link.download = 'S3_X3_Wired_Button_replacement_Procedure.pdf'; // Update the desired file name
-    link.click();
-  };
-
-  return (
-    <a onClick={downloadPdf} className="Protonvpn">
-      Download S3_X3_Wired_Button_replacement_Procedure.pdf
-    </a>
-  );
-};
-
-const DownloadsPage: React.FC = () => {
-  return (
-    <html>
-      <head>
-        <title>Downloads</title>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link rel="stylesheet" type="text/css" href="/styles/downloads.css" />
-        <style>
-          {/* Your existing styles */}
-        </style>
-      </head>
-      <body>
-        <div className="container">
-          <h1 className="Titlename">Downloads</h1>
-          <div className="ButtonContainer">
-            <div className="btn-group">
-              <DownloadButton />
-            </div>
-            <div className="windscribeg">
-              <a download
-                href="/host/S3_X3_Boost_Bell_Button_replacement_procedure.pdf"
-                className="Protonvpn Protonvpnexe"
-              >
-                S3_X3_Boost_Bell_Button_replacement_procedure.pdf
-              </a>
-            </div>
-          </div>
-        </div>
-      </body>
-    </html>
-  );
-};
-
-export default DownloadsPage;
-In this code:
-
-I've created a DownloadButton component that handles the file download logic. It creates a link with the specified href and download attributes.
-
-I've included the DownloadButton component within the "btn-group" div in your DownloadsPage component, so clicking the button will trigger the download.
-
-Make sure to update the href and download attributes in the DownloadButton component with the correct path and desired file name.
-
-
-
-
-User
-where is the download button?
-ChatGPT
-My apologies for the confusion. It appears that there was an issue with my previous code snippet. To add a download button, you can modify your original DownloadsPage component to include a simple download link. Here's the updated code:
-
-tsx
-Copy code
-import React from 'react';
-
-const DownloadsPage: React.FC = () => {
-  return (
-    <html>
-      <head>
-        <title>Downloads</title>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link rel="stylesheet" type="text/css" href="/styles/downloads.css" />
-        <style>
-          {/* Your existing styles */}
-        </style>
-      </head>
-      <body>
-        <div className="container">
-          <h1 className="Titlename">Downloads</h1>
-          <div className="ButtonContainer">
-            <div className="btn-group">
-              {/* This is the download link for your PDF file */}
-              <a href="/host/S3_X3_Wired_Button_replacement_Procedure.pdf" download className="Protonvpn">
-                Download S3_X3_Wired_Button_replacement_Procedure.pdf
-              </a>
-            </div>
-            <div className="windscribeg">
-              <a href="/host/S3_X3_Boost_Bell_Button_replacement_procedure.pdf" download className="Protonvpn Protonvpnexe">
-                Download S3_X3_Boost_Bell_Button_replacement_procedure.pdf
-              </a>
-            </div>
-          </div>
-        </div>
-      </body>
-    </html>
-  );
-};
-
-export default DownloadsPage;
-In this code, I've added the download attribute to the download links within the DownloadsPage component. These links will allow users to download the specified PDF files when clicked.
-
-
-
-
-
