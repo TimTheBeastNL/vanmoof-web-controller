@@ -43,6 +43,7 @@ const DownloadsPage: React.FC = () => {
             >
               <i className="fas fa-shield-alt"></i> S3_X3 Boost_Bell Button replacement procedure-1.pdf
             </a>
+            </div>
           </div>
         </div>
         <h1 className="TextInfobottom">made by Tim. 2023</h1>
