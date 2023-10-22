@@ -104,15 +104,15 @@ const DownloadsPage: React.FC = () => {
           <h1 className="Titlename">Downloads</h1>
           <div className="ButtonContainer">
             <div className="btn-group">
-              <a
+              <a download
                 href="/host/S3_X3_Wired_Button_replacement_Procedure.pdf"
-                className="Protonvpn" download>
+                className="Protonvpn">
                 S3_X3_Wired_Button_replacement_Procedure.pdf
               </a>
-              <Link href="/S3_X3_Wired_Button_replacement_Procedure.pdf" locale={false}>S3_X3_Wired_Button_replacement_Procedure.pdf.</Link>
+              
             </div>
             <div className="windscribeg">
-              <a
+              <a download
                 href="/host/S3_X3_Boost_Bell Button_replacement_procedure.pdf"
                 className="Protonvpn Protonvpnexe"
               >
