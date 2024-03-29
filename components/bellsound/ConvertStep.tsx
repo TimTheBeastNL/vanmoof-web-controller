@@ -10,7 +10,7 @@ const globalFfmpeg = new FFmpeg()
 
 export default function ConvertStep({ onDismiss, selectedFile, onConversionCompleted, onError }: CommonProps & {
     selectedFile: File,
-    onConversionCompleted: (convertedFile: Uint8Array) => void,
+    onConversionCompleted: (convertedFile: File) => void,
     onError: (error: string) => void,
 }) {
     const [ffmpegLog, setFfmpegLog] = useState<string>("")
@@ -128,7 +128,7 @@ export default function ConvertStep({ onDismiss, selectedFile, onConversionCompl
             return
         }
 
-        onConversionCompleted(File)
+        onConversionCompleted(convertedFile)
 
         log("Done!")
         setConverting(false)
