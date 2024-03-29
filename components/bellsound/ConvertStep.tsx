@@ -128,7 +128,7 @@ export default function ConvertStep({ onDismiss, selectedFile, onConversionCompl
             return
         }
 
-        onConversionCompleted(fileWithHeader)
+        onConversionCompleted(File)
 
         log("Done!")
         setConverting(false)
