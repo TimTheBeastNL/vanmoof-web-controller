@@ -196,9 +196,15 @@ export class Bike {
     }
 
     async initiateBellSoundTransfer(buffer: ArrayBuffer): Promise<any> {
+       const fileHeader = new Uint8Array(9)
        
-      
-        return await this.bluetoothWrite(FIRMWARE_METADATA, new Uint8Array([0x00009185c4a8bdd40]))
+        const fileSize = buffer.byteLength
+        fileHeader.set([fileSize >> 24, fileSize >> 16, fileSize >> 8, fileSize], 1)
+
+        const crc = CRC32.buf(new Uint8Array(buffer))
+        fileHeader.set([crc >> 24, crc >> 16, crc >> 8, crc], 5)
+
+        return await this.bluetoothWrite(FIRMWARE_METADATA, new Uint8Array(fileHeader))
     }
 
     async sendBellSoundChunk(chunk: ArrayBuffer): Promise<any> {
