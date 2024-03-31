@@ -17,7 +17,7 @@ export default function UploadStep({ bike, onDismiss, convertedFile, onUploadCom
 
         
         await bike.initiateBellSoundTransfer(convertedFile)
-        const chunkSize = 240
+        const chunkSize = 480
         for (let i = 0; i < convertedFile.byteLength; i += chunkSize) {
             const chunk = convertedFile.slice(i, i + chunkSize)
             await bike.sendBellSoundChunk(chunk)
