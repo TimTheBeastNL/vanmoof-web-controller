@@ -18,12 +18,18 @@ export default function ConvertStep({ onDismiss, selectedFile, onConversionCompl
 
         // Perform any necessary file validation or checks here
 
-        // Convert the File object to Uint8Array
+        // Convert the File object to ArrayBuffer
         const fileReader = new FileReader();
         fileReader.onload = () => {
             const arrayBuffer = fileReader.result as ArrayBuffer;
             const uint8Array = new Uint8Array(arrayBuffer);
-            onConversionCompleted(uint8Array);
+
+            // Convert the Uint8Array to hex string
+            const hexString = Array.from(uint8Array)
+                .map(byte => byte.toString(16).padStart(2, '0'))
+                .join('');
+
+            onConversionCompleted(hexString);
             setConverting(false);
         };
         fileReader.readAsArrayBuffer(selectedFile);
