@@ -18,11 +18,15 @@ export default function ConvertStep({ onDismiss, selectedFile, onConversionCompl
 
         // Perform any necessary file validation or checks here
 
-        // Simulate conversion completion
-        setTimeout(() => {
-            onConversionCompleted(selectedFile);
+        // Convert the File object to Uint8Array
+        const fileReader = new FileReader();
+        fileReader.onload = () => {
+            const arrayBuffer = fileReader.result as ArrayBuffer;
+            const uint8Array = new Uint8Array(arrayBuffer);
+            onConversionCompleted(uint8Array);
             setConverting(false);
-        }, 2000);
+        };
+        fileReader.readAsArrayBuffer(selectedFile);
     };
 
     return (
