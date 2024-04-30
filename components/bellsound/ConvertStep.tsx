@@ -66,23 +66,16 @@ export default function ConvertStep({ onDismiss, selectedFile, onConversionCompl
     }
 
     const getBestSampleRate = (lengthInSeconds: number, currentSampleRate: number): number => {
-        const maxFileSize = 400_000
 
         const projectedCurrentSize = currentSampleRate * 2 * lengthInSeconds
-        if (projectedCurrentSize < maxFileSize) return currentSampleRate
 
         const possibleSampleRates = [
             44100,
-            22050,
-            16000,
-            11025,
-            8000,
-            6000
         ]
 
         for (const sampleRate of possibleSampleRates) {
             const projectedSize = sampleRate * 2 * lengthInSeconds
-            if (projectedSize < maxFileSize) return sampleRate
+            return sampleRate
         }
 
         return 6000
